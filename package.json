@@ -1,0 +1,25 @@
+{
+  "name": "movie_database",
+  "version": "1.0.0",
+  "description": "Movie Database",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Zamin Kamil",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "express": "^4.16.4",
+    "mongod": "^2.0.0",
+    "mongoose": "^5.3.10"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
+  }
+}
